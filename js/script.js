@@ -3,7 +3,7 @@
 // Typing text script
 
 function typingHandler() {
-  const text = "I am Gowthaman G";
+  const text = "I'm Gowthaman G";
   const typingElement = document.querySelector("#typing-text");
   const typingDelay = 100;
   typeText(text, typingElement, typingDelay);

@@ -61,6 +61,31 @@ textarea {
 }
 
 /*Media Query*/
+@media (max-width: 567px) {
+  .about-content p {
+    text-align: left;
+  }
+  #typing-text {
+    font-size: 1.9rem;
+  }
+  .roles span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .text-start span {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .footer-txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .hstack {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+}
 @media (max-width: 767px) {
   .header .social i {
     font-size: 32px;
