@@ -1,0 +1,87 @@
+.header {
+  background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .text-container {
+    z-index: 10;
+  }
+  .roles {
+    font-family: "lora-regular", sans-serif;
+    letter-spacing: 1px;
+  }
+  .social {
+    bottom: 50px;
+  }
+}
+
+/*About*/
+.about-img {
+  width: 200px;
+}
+
+/*Portfolio*/
+.project:hover {
+  transform: scale(1.02);
+  transition: all 0.8s ease-in-out;
+  opacity: 0.5;
+}
+
+/*Services*/
+.services {
+  background: url("../images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  .container {
+    z-index: 10;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.noshadow {
+  box-shadow: none !important;
+}
+textarea {
+  resize: none;
+}
+
+/*Media Query*/
+@media (max-width: 767px) {
+  .header .social i {
+    font-size: 32px;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .about-content {
+    flex-direction: column;
+    gap: 1;
+  }
+  .head {
+    margin-bottom: 2.3rem !important;
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+  .noborder {
+    border-bottom: 0 !important;
+  }
+}
